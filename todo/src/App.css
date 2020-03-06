@@ -1,0 +1,123 @@
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+.textL{
+  text-decoration: line-through;
+}
+/* Remove margins and padding from the list */
+tr {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+tr td {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the tdst items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+h2{
+    font-size: 1.22cm;
+}
+.phrase{
+  color: gray;
+  text-align: center;
+  font-size: 0.7cm;
+  margin: 47px;
+}
+
+/* Set all odd tdst items to a different color (zebra-stripes) */
+tr td:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+tr td:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+tr td.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+.chec{
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+
+/* Add a "checked" mark when clicked on */
+
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #e2bfbca9;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: rgba(103, 173, 239, 0.8980392156862745);
+  padding: 12px 19px;
+  color: white;
+  text-align: right;
+  height: 289px;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  padding: 10px;
+  float: right;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  margin-top: 18px;
+  padding: 12px;
+  width: 15%;
+  background-color: transparent;
+  border: solid 1px white;
+  color: #555;
+  float: right;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
